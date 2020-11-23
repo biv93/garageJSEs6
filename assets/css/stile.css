@@ -1,0 +1,180 @@
+button {
+  padding: 1rem 2rem;
+}
+
+html {
+  font-size: 62.5%;
+  color: #656565;
+}
+
+html body {
+  font-family: "Montserrat", sans-serif !important;
+  box-sizing: border-box;
+  background-color: #fff;
+  margin: 0;
+}
+
+html body header {
+  border-bottom: 1px solid #ededed;
+}
+
+html body header nav {
+  margin: 0 20%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+html body header nav h1 {
+  margin: 0;
+  font-size: 2.6rem;
+  flex-grow: 2;
+  padding: 1rem;
+}
+
+html body header nav h1 span {
+  background-color: #656565;
+  padding: .8rem 1rem;
+  color: #fff;
+}
+
+html body header nav ul {
+  font-size: 1.8rem;
+  display: flex;
+  padding: 0;
+  flex-flow: row wrap;
+  list-style: none;
+  justify-content: space-around;
+  flex-grow: 1;
+  margin: 0;
+  align-items: center;
+}
+
+html body header nav ul li {
+  text-transform: uppercase;
+  padding: 1.6rem;
+}
+
+html body header nav ul li.active {
+  background-color: #ededed;
+  color: black;
+}
+
+html body main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+html body main #form {
+  padding: 5rem 20rem;
+}
+
+html body main #form h2 {
+  color: #006E90;
+  font-size: 2.5rem;
+}
+
+html body main #form .form-group {
+  margin: 2rem 0;
+}
+
+html body main #form .form-group label {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+html body main #form .form-group input {
+  border: none;
+  background-color: #ededed;
+  width: 25rem;
+  height: 2.5rem;
+}
+
+html body main #form button {
+  background-color: #006E90;
+  border: 0;
+  font-size: 1.4rem;
+  color: #fff;
+  border-radius: 4%;
+}
+
+html body main .img-container {
+  position: relative;
+  text-align: center;
+}
+
+html body main .img-container img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+  margin: auto;
+}
+
+html body main .img-container::before {
+  content: '';
+  position: absolute;
+  height: 5rem;
+  right: 0;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  z-index: -1;
+  background-color: #006E90;
+}
+
+html body #ul-lista {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding-top: 3rem;
+  padding-left: 0;
+}
+
+html body #ul-lista h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+html body #ul-lista .list-title {
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+  justify-content: space-around;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0;
+  font-size: 1.6rem;
+  background-color: #656565;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+html body #ul-lista .list-title li {
+  font-weight: bold;
+}
+
+html body #ul-lista .car-lista {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+html body #ul-lista .car-lista ul {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+  font-size: 1.6rem;
+  justify-content: space-around;
+  padding-left: 0;
+  padding: 1rem;
+}
+
+html body #ul-lista .rigaMacchina:nth-child(odd) {
+  background-color: #fff;
+}
+
+html body #ul-lista .rigaMacchina:nth-child(even) {
+  background-color: #ededed;
+}

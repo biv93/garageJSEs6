@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/img/gear-icon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="/assets/css/stile.css">
+    <title>Garage</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Garage <span id="innerLogo">Js</span></h1>
+            <ul>
+                <li class="active">aggiungi macchina</li>
+                <li>macchine disponibili</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="form">
+            <h2>Aggiungi una macchina alla lista:</h2>
+            <div class="form-group">
+                <label for="marca">Marca:</label> <br>
+                <input type="text" name="marca" id="marca">
+            </div>
+            <div class="form-group">
+                <label for="modello">Modello:</label> <br>
+                <input type="text" name="modello" id="modello">
+            </div>
+            <div class="form-group">
+                <label for="colore">Colore:</label> <br>
+                <input type="text" name="colore" id="colore">
+            </div>
+            <button type="submit">invia</button>
+        </form>
+        <div class="img-container">
+            <img src="/assets/img/car.png" alt="car"/>
+        </div>
+        <ul id="ul-lista">
+            <h2>-Lista Garage-</h2>
+            <div class="list-title">
+                <li>marca</li>
+                <li>modello</li>
+                <li>colore</li>
+            </div>
+            <div class="car-lista"></div>
+        </ul>
+    </main>
+ 
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

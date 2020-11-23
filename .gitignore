@@ -1,0 +1,7 @@
+#ignore scss
+assets/scss
+*.scss
+*.DS_Store
+
+# Ignore files called 'object.js'
+object.js
